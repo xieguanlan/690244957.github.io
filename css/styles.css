@@ -22,10 +22,9 @@ label:first-of-type {
   margin-left: 0;
 }
 div {
-  width: 100%;
-  margin-top: -1px;
-  padding: 1em;
-  border: 1px solid #ddd;
+ display: flex; 
+ align-items: center; 
+ justify-content: center; 
   -webkit-order: 1;
   order: 1;
 }
@@ -38,27 +37,3 @@ input[type=radio]:checked + label {
 }
 input[type=radio]:checked + label + div {
   display: block;
-@media (max-width: 30rem) label{
-
-	
-	#tab-two {
-		flex: 1;
-		order: 3;
-	}
-	#tab-three{
-		width: 30%;
-		order: 2;
-	}
-	#tab-four {
-		width: 30%;
-		order: 4;
-	}
-	#tab-five {
-		width: 50%;
-   order:5;
-	}
-  #tab-six{
-    width:50%;
-    order:6;
-  }
-	}
