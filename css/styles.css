@@ -8,7 +8,7 @@ section {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
+img{max-width:100%;}
 label {
   background: #eee; 
   border: 1px solid #ddd; 
