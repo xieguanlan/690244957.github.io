@@ -37,3 +37,26 @@ input[type=radio]:checked + label {
 }
 input[type=radio]:checked + label + div {
   display: block;
+@media (max-width: 30rem) {
+
+	
+	#tab-two {
+		flex: 1;
+		order: 3;
+	}
+	#tab-three{
+		width: 30%;
+		order: 2;
+	}
+	#tab-four {
+		width: 30%;
+		order: 4;
+	}
+	#tab-five {
+		width: 50%;
+   order:5;
+	}
+  #tab-six{
+    width:50%;
+    order:6;
+  }
