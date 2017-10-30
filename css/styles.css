@@ -18,6 +18,7 @@ label {
   margin-left: -1px;
 }
 label:first-of-type {
+  margin-right:auto;
   margin-left: 0;
 }
 div {
