@@ -1,14 +1,18 @@
+/*定义body元素内的字体类型和颜色*/
 body {
   font-family: Arial;
    color: #333;
 }
+
 section {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+/*使图片最大放大为自身的大小，确保图片不会失真*/
 img{max-width:100%;}
+/*定于label元素内的背景颜色、边框、内边距、触摸屏类型、排版出血*/
 label {
   background: #eee; 
   border: 1px solid #ddd; 
@@ -21,6 +25,7 @@ label:first-of-type {
   margin-right:auto;
   margin-left: 0;
 }
+/*定义div元素内的宽度、上部外边距、内边距、框架、次序*/
 div {
   width: 100%;
   margin-top: -1px;
@@ -29,12 +34,15 @@ div {
   -webkit-order: 1;
   order: 1;
 }
+/*定义类型为radion的input元素和div元素不会被展示*/
 input[type=radio], div {
   display: none;
 }
+/*定义紧跟页面加载时应该被预先选定的 类型为radion的input 元素之后的所有label元素*的背景颜色和边框底部*/
 input[type=radio]:checked + label {
   background: #fff;
   border-bottom: 1px solid #fff;
 }
+/*定义紧跟页面加载时应该被预先选定的 类型为radion的input 元素之后的所有div元素不会被展示*/
 input[type=radio]:checked + label + div {
   display: block;
