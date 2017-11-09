@@ -6,7 +6,7 @@ a {
   text-decoration: none;
 }
 iframe{width:43%;height:400px;display: flex; flex: 1; 
- justify-content: space-between; }
+ justify-content: space-between; flex-direction: row;}
 .st-container {
 	position: absolute;
 	width: 100%;
