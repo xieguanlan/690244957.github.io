@@ -5,7 +5,8 @@ body {
 a {
   text-decoration: none;
 }
-iframe{width:45%;height:400px;margin:0 2%;}
+iframe{width:45%;height:400px;margin:0 2%;display: flex; flex: 1; 
+ justify-content: space-between; }
 .st-container {
 	position: absolute;
 	width: 100%;
