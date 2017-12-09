@@ -1,110 +1,48 @@
-* {
-	box-sizing: border-box;
-}
-
+/*定义body元素内的字体类型和颜色*/
 body {
-	padding: 1rem .5rem;
-	font-size: 1.3rem;
-	line-height: 1.2;
-	max-width: 60rem;
-	margin: 0 auto;
-	color: #333;
+  font-family: Arial;
+   color: #333;
 }
 
-img {
-	max-width: 100%;
-	
+section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
-
-.Header {
-	text-align: center;
-	border-bottom: 8px double #f9f9f9;
-	margin-bottom: 2rem;
-	padding-bottom: 1rem;
+/*使图片最大放大为自身的大小，确保图片不会失真*/
+img{max-width:100%;}
+/*定于label元素内的背景颜色、边框、内边距、触摸屏类型、排版出血*/
+label {
+  background: #eee; 
+  border: 1px solid #ddd; 
+  padding: .7em 1em;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: -1px;
 }
-
-.Strap {
-	font-size: 1rem;
+label:first-of-type {
+  margin-right:auto;
+  margin-left: 0;
 }
-
-
-.MoneyShot {
-	position: relative;
+/*定义div元素内的宽度、上部外边距、内边距、框架、次序*/
+div {
+  width: 100%;
+  margin-top: -1px;
+  padding: 1em;
+  border: 1px solid #ddd;
+  -webkit-order: 1;
+  order: 1;
 }
-
-.MoneyShotImg {
-	border: 6px solid #e8cfa9;
-	border-radius: 4px;
+/*定义类型为radion的input元素和div元素不会被展示*/
+input[type=radio], div {
+  display: none;
 }
-
-.LogoWrapper {
-	display: block;
+/*定义紧跟页面加载时应该被预先选定的 类型为radion的input 元素之后的所有label元素*的背景颜色和边框底部*/
+input[type=radio]:checked + label {
+  background: #fff;
+  border-bottom: 1px solid #fff;
 }
-
-.ImageCaption {
-	font-size: .75rem;
-	position: absolute;
-	bottom: .5rem;
-	right: 1rem;
-}
-
-.IntroText {
-	font-size: 1.8rem;
-	font-style: italic;
-}
-
-.MethodWrapper li {
-	padding: .4rem 0;
-}
-
-.MethodWrapper li:after {
-	content: "✼";
-	display: block;
-	text-align: center;
-	margin: 1rem 0 .5rem 0;
-	color: #eee;
-}
-
-@media screen and (min-width: 50rem) {
-	body {
-		border-left: 4px solid #f9f9f9;
-		border-right: 4px solid #f9f9f9;
-		padding: 1rem 2rem;
-	}
-
-	.IntroWrapper {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-	}
-
-	.MoneyShot,
-	.IntroText {
-		display: table-cell;
-		width: 50%;
-		vertical-align: middle;
-		text-align: center;
-	}
-
-	.IntroText {
-		padding: .5rem;
-		font-size: 2.5rem;
-		text-align: left;
-		position: relative;
-	}
-
-	.Ingredients {
-		font-size: .9rem;
-		float: right;
-		padding: 1rem;
-		margin: 0 0 .5rem 1rem;
-		border-radius: 3px;
-		background-color: #ffffdf;
-		border: 2px solid #e8cfa9;
-	}
-
-	.Ingredients h3 {
-		margin: 0;
-	}
-}
+/*定义紧跟页面加载时应该被预先选定的 类型为radion的input 元素之后的所有div元素不会被展示*/
+input[type=radio]:checked + label + div {
+  display: block;
