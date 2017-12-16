@@ -9,6 +9,7 @@
 body {
 	font-family: $base-font;
 	color: $text-color;
+    blackground:aliceblue
 	@include font-size(16);
 }
 
