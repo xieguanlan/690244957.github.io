@@ -5,8 +5,8 @@ date:   2017-11-30 19:30:37 +0800
 categories: jekyll update
 ---
 
-* ![Example image](/images/工作表1.png)
-* ![Example image](/images/工作表2.png)
+* ![img/工作表 1.png](/images/300.jpg)
+* ![img/工作表 2.png](/images/420.jpg)
 
 
 
