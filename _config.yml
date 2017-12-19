@@ -62,3 +62,6 @@ exclude:
   - package.json
   - spec
   - tmp
+slideshow:
+    width: 150
+    height: 100
